@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <fcntl.h>
 #include <stdlib.h>
+#include "libtasty.h"
 
 char	rndm_a()
 {
@@ -43,7 +44,9 @@ char	*generate_psswd()
 	char	*psswd;
 	int i;
 	int swityi;
+	int BUFF;
 
+	BUFF = 20;
 	i = 0;
 	swityi = 0;
 	psswd = calloc(BUFF, sizeof(char));
@@ -62,8 +65,9 @@ char	*generate_psswd()
 	return (psswd);
 }
 
+//int main()
 
-
+/*
 int	main(int arg, char *args[], char * const env[])
 {
 	if (arg == 0)
@@ -106,4 +110,4 @@ int	main(int arg, char *args[], char * const env[])
 		}
 	}
 	return (0);
-}
+}*/
